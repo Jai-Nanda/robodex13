@@ -19,7 +19,10 @@ const myFont = localFont({
 export default function App({ Component, pageProps }: AppProps) {
   return  <><style jsx global>{`
   html {
+    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
     font-family: ${myFont.style.fontFamily};
   }
-`}</style><Navbar/> <Component {...pageProps} />  </>
+`}</style><Navbar/> <Component {...pageProps} /> <Footer/> </>
 }

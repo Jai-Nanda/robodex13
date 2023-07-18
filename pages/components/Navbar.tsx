@@ -64,7 +64,7 @@ const Navbar = () => {
 
   return (
     <div
-    className={navbar ? 'left-0 top-0 w-full z-10 ease-in duration-300  pb-3  sticky backdrop-blur-lg sm:backdrop-blur-xl dark:bg-white/5 bg-white bg-opacity-50   transition-all' : ' sticky  left-0 top-0 w-full z-10 ease-in  duration-300  pb-2 transition-all'}
+    className={navbar ? 'left-0 top-0 pt-2 w-full z-10 backdrop-blur-lg sm:backdrop-blur-xl bg-white/50   ease-in duration-300  pb-3  sticky   bg-opacity-50   transition-all' : ' sticky  left-0 top-0 pt-2  w-full z-10 ease-in  duration-300  pb-5 transition-all'}
 
       // className='flex justify-center items-center  px-4 h-20'
     >

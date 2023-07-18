@@ -18,8 +18,11 @@ export default function Home() {
     <div className="flex justify-center items-center mt-5">
       <span className="text-pm-color sm:pr-2 text-sm pr-1 sm:text-2xl font-black">13 </span><h1 className=" text-sm sm:text-2xl font-black"> YEARS OF ROBOTIC EXCELLENCE!</h1>
     </div>
-    <div className=" m-auto px-0 ">
-      <Image src={team} alt="team" className="sm:max-h-2xl max-w-[100%]"></Image>
+    <div className=" m-auto px-0 " style={{
+            backgroundImage: `url(/https://unsplash.com/photos/XHyHy2tEs8M.jpg)`
+    }}>
+      {/* <Image src={team} alt="team" className="sm:max-h-2xl max-w-[100%]"> */}
+      {/* </Image> */}
     </div>
     </div>
    </div>

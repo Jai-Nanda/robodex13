@@ -7,7 +7,7 @@ export default function DPSMap() {
           height: `450px`,
           width: `420px`,
         }}
-        className='border-white border-8   rounded-xl'
+        className=''
       >
         <iframe
           width="420" 

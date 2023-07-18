@@ -9,14 +9,13 @@ export default function Contact() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    <div className="sm:max-w-5xl m-auto  max-w-[80%]  h-[75vh] ">
+    <div className="sm:max-w-5xl  m-auto  max-w-[80%] mb-10  h-[75vh] ">
         <h1 className="mt-5 text-center mb-5 font-black text-3xl text-pm-color">GET IN TOUCH</h1>
-        <div className='flex flex-col items-center justify-center sm:flex sm:flex-row-reverse sm:justify-between sm:items-center ' >
-         <div className="">
+        <div className='flex flex-col   items-center   justify-center sm:flex sm:flex-row-reverse sm:justify-between sm:items-center ' >
+         <div className="shadow-new border-white border-8 rounded-lg">
           <DPSMap />
          </div>
-         <div className=" bg-white backdrop-filter backdrop-blur-sm bg-opacity-60 pb-5 pt-5 px-5 rounded-lg ">
-          <div className='  max-w-[85%] m-auto sm:max-w-[100%]'>
+         <div className=" bg-white backdrop-filter backdrop-blur-sm bg-opacity-60  px-10 pb-5 pt-5 mr-10 shadow-new2 rounded-lg ">          <div className='  max-w-[85%] m-auto sm:max-w-[100%]'>
             Contact us at: 
             <h4 >Delhi Public School, Dwarka</h4>
             <br />  

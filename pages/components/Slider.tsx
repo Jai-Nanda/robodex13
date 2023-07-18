@@ -7,7 +7,7 @@ import soccer from '@/public/soccer.png'
 export default class NextJsCarousel extends Component {
 	render() {
 		return (
-			<div className='max-h-xl max-w-4xl rounded-lg  m-auto mt-10 bg-white shadow-bg backdrop-filter backdrop-blur-sm bg-opacity-10'>
+			<div className='max-h-xl max-w-4xl rounded-lg  m-auto mt-10 bg-white shadow-nav backdrop-filter backdrop-blur-sm bg-opacity-10'>
 			<Carousel className='sm:max-h-2xl max-h-xl'>
 				<div className='flex justify-center items-center flex-col sm:flex-row sm:max-h-xl'>
 					<div className='sm:max-w-[50%]  '>
