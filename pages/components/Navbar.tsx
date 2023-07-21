@@ -50,11 +50,6 @@ const Navbar = () => {
       pname: "contact"
     },
     {
-      label: "GALLERY",
-      path: "/gallery",
-      pname: "gallery"
-    },
-    {
       label: "QOTD",
       path: "/qotd",
       pname: "qotd"
@@ -69,10 +64,11 @@ const Navbar = () => {
 
   return (
     <div
-      
-      className=' flex justify-center items-center  px-4 h-20'
+    className={navbar ? 'left-0 top-0 pt-2 w-full z-10 backdrop-blur-lg sm:backdrop-blur-xl bg-white/50   ease-in duration-300  pb-3  sticky   bg-opacity-50   transition-all' : ' sticky  left-0 top-0 pt-2  w-full z-10 ease-in  duration-300  pb-5 transition-all'}
+
+      // className='flex justify-center items-center  px-4 h-20'
     >
-      <div className='max-w-5xl m-auto flex justify-between items-center  '>
+      <div className='max-w-5xl m-auto flex justify-between items-center'>
         <Link href='/' className="mr-10">
           <Image src={Logo} alt="logo" className='w-64'></Image>
         </Link>

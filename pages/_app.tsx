@@ -9,7 +9,7 @@ const nunito = Nunito({
 })
 import localFont from 'next/font/local'
 import Footer from './components/Footer'
-
+ 
 // Font files can be colocated inside of `app`
 const myFont = localFont({
   src: 'conthrax-sb.ttf',
@@ -19,8 +19,10 @@ const myFont = localFont({
 export default function App({ Component, pageProps }: AppProps) {
   return  <><style jsx global>{`
   html {
+    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
     font-family: ${myFont.style.fontFamily};
   }
-`}
-</style><Navbar/> <Component {...pageProps} /> <Footer/> </>
+`}</style><Navbar/> <Component {...pageProps} /> <Footer/> </>
 }
