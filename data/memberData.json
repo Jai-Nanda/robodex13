@@ -1,0 +1,65 @@
+[
+    {
+        "post": "PRESIDENTS",
+        "holders": [
+            {
+                "post1": "RAGHAV GROVER",
+                "post2": "SUYASH CHAUHAN"
+            }
+        ]
+    },
+    {
+        "post": "VICE PRESIDENTS",
+        "holders": [
+            {
+                "post1": "RAGHAV BANSAL",
+                "post2": "AAYAN YADAV"
+            }
+        ]
+    },
+    {
+        "post": "SECRETARIES",
+        "holders": [
+            {
+                "post1": "KESHAV SETHI",
+                "post2": "JAI NANDA"
+            }
+        ]
+    },
+    {
+        "post": "LOGISTICS HEADS",
+        "holders": [
+            {
+                "post1": "DAKSH SETHI",
+                "post2": "LEISHA GOLCHA"
+            }
+        ]
+    },
+    {
+        "post": "JOINT SECRETARIES",
+        "holders": [
+            {
+                "post1": "NAKSHATRA MIGLANI",
+                "post2": "ARJUN KANWAR"
+            }
+        ]
+    },
+    {
+        "post": "TECH HEADS",
+        "holders": [
+            {
+                "post1": "ARJUN GAMBHIR",
+                "post2": "M.SREEVARSHAN"
+            }
+        ]
+    },
+    {
+        "post": "SENIOR MEMBERS",
+        "holders": [
+            {
+                "post1": "SHREYAS BATRA",
+                "post2": "TASIA ANAND"
+            }
+        ]
+    }
+]
