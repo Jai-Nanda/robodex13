@@ -29,7 +29,7 @@ const StarsAnimation = () => {
       stars.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
-        radius: Math.random() * 3 + 1,
+        radius: Math.random() * 2 + 1,
         vx: Math.floor(Math.random() * 50) - 25,
         vy: Math.floor(Math.random() * 50) - 25,
       });
@@ -66,7 +66,7 @@ const StarsAnimation = () => {
           }
         }
       }
-      ctx.lineWidth = 0.4;
+      ctx.lineWidth = 0.35;
       ctx.strokeStyle = "#1d1d3e";
       ctx.stroke();
     }

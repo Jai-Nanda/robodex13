@@ -1,4 +1,5 @@
 import '@/styles/globals.css'
+import StarsAnimation from "@/src/starsAnimation";
 import Navbar from './components/Navbar'
 import type { AppProps } from 'next/app'
 import { Nunito } from 'next/font/google'
@@ -24,5 +25,5 @@ export default function App({ Component, pageProps }: AppProps) {
   flex-direction: column;
     font-family: ${myFont.style.fontFamily};
   }
-`}</style><Navbar/> <Component {...pageProps} /> <Footer/> </>
+`}</style><StarsAnimation/><Navbar/> <Component {...pageProps} /> <Footer/> </>
 }
