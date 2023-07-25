@@ -58,12 +58,13 @@ const Navbar = () => {
       label: "BLOG",
       path: "/blog",
       pname: "blog"
-    },
-    {
-      label: "Register",
-      path: "/reg",
-      pname: "reg"
     }
+    //changed to redirect as the design was not that perfect, yet
+    // { 
+    //   label: "Register",
+    //   path: "/intras-reg",
+    //   pname: "reg"
+    // }
   ]
 
 
