@@ -11,7 +11,7 @@ export default class NextJsCarousel extends Component {
 			<Carousel className='sm:max-h-2xl max-h-xl'>
 				<div className='flex justify-center items-center flex-col sm:flex-row sm:max-h-xl'>
 					<div className='sm:max-w-[50%]  '>
-						<h1 className='text-center text-pm-color font-black  text-2xl'>ROBOSOCCER</h1>
+						<h1 className='text-left pl-10 text-pm-color font-black  text-2xl'>ROBOSOCCER</h1>
 				<p className='sm:text-left font-semibold max-w-[90%] pt-2 m-auto text-center text-lg'>Welcome to the electrifying arena of Robosoccer, where human ingenuity and technological prowess collide in a spectacular display of robotic athleticism. Witness the future of sports as state-of-the-art robots take center stage, showcasing their agility, precision, and strategic brilliance.  It&apos;se a thrilling fusion of cutting-edge engineering and the beautiful game of soccer.</p>
 					</div>
 					<div className=' mt-4 '>

@@ -3,7 +3,7 @@ export default function events() {
   return (
     <div>
       <h1 className="text-pm-color font-black text-center text-3xl">EVENTS@13</h1>
-      <div className=''>
+      <div className='mb-14'>
         <Slider/>
       </div>
     </div>
