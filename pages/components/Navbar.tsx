@@ -7,7 +7,7 @@ import Logo from '@/public/logo.png'
 const Navbar = () => {
   const router = useRouter()
   const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
+  const toggle = () => setIsOpen(!isOpen) ;
   const hide = () => setIsOpen(false);
   const show = () => setIsOpen(true)
   const [nav, setNav] = useState(false);
@@ -114,14 +114,14 @@ const Navbar = () => {
           <div
           className={
             nav
-              ? 'sm:hidden absolute min-h-[100vh] top-0 left-0 right-0 bottom-0 flex justify-center m items-center  h-screen bg-gray-200 dark:text-white text-black dark:bg-black text-center transition-all ease-in duration-300'
-              : 'max-w-[80%] flex justify-between items-center sm:hidden bg-black absolute top-0 left-0 right-10 transition-all dark:text-white text-black'
+              ? 'sm:hidden absolute min-h-[100vh] top-0 left-0 right-0 bottom-0 flex justify-center m items-center  h-screen backdrop-blur-lg sm:backdrop-blur-xl bg-white/70    text-black text-center transition-all ease-in duration-300'
+              : 'max-w-[80%] flex justify-between items-center sm:hidden backdrop-blur-xl sm:backdrop-blur-xl bg-white   ease-in duration-300 absolute top-0 left-0 right-10 transition-all  text-black'
             }
         >
           <ul className={
             nav
               ? 'sm:hidden'
-              : 'hidden sm:hidden'
+              : 'hidden sm:hidden '
           }>
           {links.map(({label , path, pname}) => (
             <ul key={path}>
