@@ -70,13 +70,13 @@ const Navbar = () => {
 
   return (
     <div
-    className={navbar ? 'left-0 top-0 pt-2 w-full z-10 backdrop-blur-lg sm:backdrop-blur-xl bg-white/50   ease-in duration-300  pb-3  sticky   bg-opacity-50   transition-all' : ' sticky backdrop-blur-lg sm:backdrop-blur-xl bg-white/50    left-0 top-0 pt-2  w-full z-10 ease-in  duration-300  pb-5 transition-all'}
+    className={navbar ? 'left-0 top-0 pt-2 w-full z-10 backdrop-blur-lg sm:backdrop-blur-sm bg-white/40   ease-in duration-300  pb-3  sticky   bg-opacity-50   transition-all' : ' sticky backdrop-blur-lg sm:backdrop-blur-sm bg-white/40    left-0 top-0 pt-2  w-full z-10 ease-in  duration-300  pb-5 transition-all'}
 
       // className='flex justify-center items-center  px-4 h-20'
     >
       <div className='max-w-5xl m-auto flex justify-between items-center'>
         <Link href='/' className="mr-10">
-          <Image src={Logo} alt="logo" className='w-64'></Image>
+          <Image src={Logo} alt="logo" className='ml-5 sm:left-0 sm:w-64'></Image>
         </Link>
         <ul className='hidden sm:flex font-bold bg-white shadow-nav backdrop-filter backdrop-blur-sm bg-opacity-60 p-2 rounded-xl'>
           {links.map(({label , path}) => (
@@ -114,13 +114,13 @@ const Navbar = () => {
           <div
           className={
             nav
-              ? 'sm:hidden absolute min-h-[100vh] top-0 left-0 right-0 bottom-0 flex justify-center m items-center  h-screen backdrop-blur-lg sm:backdrop-blur-xl bg-white/70    text-black text-center transition-all ease-in duration-300'
-              : 'max-w-[80%] flex justify-between items-center sm:hidden backdrop-blur-xl sm:backdrop-blur-xl bg-white   ease-in duration-300 absolute top-0 left-0 right-10 transition-all  text-black'
+              ? 'sm:hidden absolute min-h-[100vh] top-0 left-2  right-0 bottom-0 flex justify-center  items-center  h-screen backdrop-blur-lg sm:backdrop-blur-xl bg-white/70    text-black text-center transition-all ease-in duration-300  '
+              : 'max-w-[80%] flex justify-between items-center border-2  sm:hidden backdrop-blur-xl sm:backdrop-blur-xl bg-white   ease-in duration-300 absolute top-0 left-0 right-10 transition-all  text-black  '
             }
         >
           <ul className={
             nav
-              ? 'sm:hidden'
+              ? 'sm:hidden  '
               : 'hidden sm:hidden '
           }>
           {links.map(({label , path, pname}) => (

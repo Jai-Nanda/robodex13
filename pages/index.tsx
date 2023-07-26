@@ -3,6 +3,7 @@ import team from '../public/team.png'
 import { BsFacebook } from 'react-icons/bs';
 import { BsLinkedin } from 'react-icons/bs';
 import { BsInstagram } from 'react-icons/bs'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -18,9 +19,9 @@ export default function Home() {
       <div className="rounded-lg backdrop-blur-lg sm:backdrop-blur-lg pb-7 bg-white/20   ease-in duration-300">
       <h1 className="pt-5 text-center text-black font-black  text-3xl">ROBODEX <span className="text-pm-color">&apos;13</span></h1>
     <div className="flex items-center justify-center p-1">
-      <BsFacebook size={20} color="#1d1d3e" className="mr-2"/>
-      <BsLinkedin size={20} color="#1d1d3e" className="mr-2"/>
-      <BsInstagram size={20} color="#1d1d3e" className=""/>
+      <Link href={"https://www.facebook.com/robodexterous/"} target="_blank"><BsFacebook size={20} color="#1d1d3e" className="mr-2"/></Link>
+      <Link href={"https://www.linkedin.com/company/robodexx/mycompany/"} target="_blank"><BsLinkedin size={20} color="#1d1d3e" className="mr-2"/></Link>
+      <Link href={"https://www.instagram.com/robodexterous/"} target="_blank"><BsInstagram size={20} color="#1d1d3e" className=""/></Link>
     </div>
     <div className="flex justify-center items-center mt-5">
       <span className="text-pm-color sm:pr-2 text-sm pr-1 sm:text-2xl font-black">13 </span><h1 className=" text-sm sm:text-2xl font-black"> YEARS OF ROBOTIC EXCELLENCE!</h1>

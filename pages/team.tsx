@@ -149,7 +149,7 @@ export default function team() {
           </div>
           
       </div>
-      <div className='bg-white shadow-nav backdrop-filter backdrop-blur-sm bg-opacity-10 mt-10 mb-10 rounded-xl max-w-4xl m-auto'>
+      <div className='bg-white shadow-nav backdrop-filter backdrop-blur-sm bg-opacity-10 mt-10  mb-20 rounded-xl max-w-4xl m-auto'>
       <h1 className='text-center text-pm-color font-black text-2xl mb-5 mt-2 pt-2'>SENIOR MEMBERS</h1>
       <div className="flex justify-around items-center flex-col sm:flex-row pb-5">
         <div className="flex flex-col justify-center items-center">
