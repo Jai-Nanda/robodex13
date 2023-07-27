@@ -26,7 +26,7 @@ export default function Qqtd() {
         id="name"
         type="text" 
         name="name" 
-        className='border-gray-200 bg-white background-filter backdrop-blur-sm opacity-80 shadow-nav border-2 rounded-lg w-40 h-7 bg-transparent '
+        className='border-gray-500 bg-white background-filter backdrop-blur-sm opacity-80 shadow-nav border-2 rounded-lg w-40 h-7 bg-transparent '
       />
       </div>
      <div className='flex justify-center items-center mt-5 '>
