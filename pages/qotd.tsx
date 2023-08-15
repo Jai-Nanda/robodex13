@@ -15,40 +15,40 @@ export default function Qqtd() {
           <p className='text-pm-color text-lg pt-2 font-black'>Made by:</p>
           </div>
             <form className='' onSubmit={handleSubmit}>
-              <div className='flex flex-col min-w-6xl  items-center'>
-              <div className=' flex mt-5 justify-between items-center flex-col sm:flex-row'>
-              <div className='flex flex-col justify-between items-center mr-20'>
+              <div className='flex flex-col min-w-6xl mb-14  items-center'>
+              <div className=' flex mt-5 justify-between items-center flex-col sm:flex-col '>
+              <div className='flex flex-col justify-between items-center  '>
                 <div className='flex justify-center items-center  '>
-            <label htmlFor="name">
-        Name: 
+            <label htmlFor="name" className='mr-2 text-lg'>
+        Name:    
       </label>
       <input
         id="name"
         type="text" 
         name="name" 
-        className='border-gray-500 bg-white background-filter backdrop-blur-sm opacity-80 shadow-nav border-2 rounded-lg w-40 h-7 bg-transparent '
+        className='border-gray-500 bg-white background-filter backdrop-blur-sm opacity-80 shadow-nav border-2 rounded-lg w-60 h-8 bg-transparent '
       />
       </div>
      <div className='flex justify-center items-center mt-5 '>
-     <label htmlFor="email">
+     <label htmlFor="email" className='mr-2 text-lg'>
         Email: 
       </label>
       <input
         id="email"
         type="email" 
         name="email" 
-        className='border-gray-500 bg-white background-filter backdrop-blur-sm opacity-80 shadow-nav border-2 rounded-lg w-40 h-7 bg-transparent '
+        className='border-gray-500 bg-white background-filter backdrop-blur-sm opacity-80 shadow-nav border-2 rounded-lg w-60 h-8 bg-transparent '
       />
      </div>
       <div className='flex justify-center items-center mt-5'>
-      <label htmlFor="name">
+      <label htmlFor="name" className='mr-2 text-lg'>
         Class: 
       </label>
       <input
         id="class/sec"
         type="text" 
         name="class/sec" 
-        className='border-gray-500 bg-white background-filter backdrop-blur-sm opacity-80 shadow-nav border-2 rounded-lg w-40 h-7 bg-transparent '
+        className='border-gray-500 bg-white background-filter backdrop-blur-sm opacity-80 shadow-nav border-2 rounded-lg w-60 h-8 bg-transparent '
       />
       </div>
       </div>
@@ -57,9 +57,9 @@ export default function Qqtd() {
         field="email"
         errors={state.errors}
       />
-      <div className='flex justify-end items-start'>
-        <div className='flex flex-row justify-center items-center '>
-        <label htmlFor="ans ">
+      <div className='flex justify-end items-center mt-5'>
+        <div className='flex flex-col justify-center items-center '>
+        <label htmlFor="ans " className=' text-lg'>
           Answer:
         </label>
       <textarea
