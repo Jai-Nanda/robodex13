@@ -25,5 +25,5 @@ export default function App({ Component, pageProps }: AppProps) {
   flex-direction: column;
     font-family: ${myFont.style.fontFamily};
   }
-`}</style><StarsAnimation/><Navbar/> <Component {...pageProps} /> <Footer/> </>
+`}</style><Navbar/> <Component {...pageProps} /> <Footer/> </>
 }

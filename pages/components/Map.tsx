@@ -4,7 +4,7 @@ export default function DPSMap() {
         style={{
           overflow: `hidden`,
           background: `none !important`,
-          height: `450px`,
+          height: `442px`,
           width: `420px`,
         }}
         className=''

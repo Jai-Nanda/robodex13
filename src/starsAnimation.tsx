@@ -12,24 +12,28 @@ const StarsAnimation = () => {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    let width = window.innerWidth;
-    let height = window.innerHeight;
-    canvas.width = width;
-    canvas.height = height;
-
-    const stars: { x: number; y: number; radius: number; vx: number; vy: number }[] = [];
-    const FPS = 60;
-    const x = 125;
     const mouse = {
       x: 0,
       y: 0,
     };
 
+    function updateCanvasSize() {
+      if (!canvas) return;
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    updateCanvasSize(); // Initial canvas size update
+
+    const stars: { x: number; y: number; radius: number; vx: number; vy: number }[] = [];
+    const FPS = 150;
+    const x = 75;
+
     for (let i = 0; i < x; i++) {
       stars.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
-        radius: Math.random() * 2 + 1,
+        radius: 0,
         vx: Math.floor(Math.random() * 50) - 25,
         vy: Math.floor(Math.random() * 50) - 25,
       });
@@ -38,7 +42,7 @@ const StarsAnimation = () => {
     function draw() {
       if (!ctx) return;
       if (!canvas) return;
-      
+
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       ctx.globalCompositeOperation = "lighter";
@@ -66,7 +70,7 @@ const StarsAnimation = () => {
           }
         }
       }
-      ctx.lineWidth = 0.35;
+      ctx.lineWidth = 0.2;
       ctx.strokeStyle = "#1d1d3e";
       ctx.stroke();
     }
@@ -98,10 +102,12 @@ const StarsAnimation = () => {
       }
     }
 
-    canvas.addEventListener("mousemove", function (e) {
-      mouse.x = e.clientX;
-      mouse.y = e.clientY;
-    });
+    function handleMouseMove(event: MouseEvent) {
+      mouse.x = event.clientX;
+      mouse.y = event.clientY;
+    }
+
+    canvas.addEventListener("mousemove", handleMouseMove);
 
     function tick() {
       draw();
@@ -111,15 +117,20 @@ const StarsAnimation = () => {
 
     tick();
 
+    // Add resize event listener to update canvas size on screen resolution change
+    window.addEventListener("resize", updateCanvasSize);
+
+    // Cleanup the resize event listener on component unmount
     return () => {
-      canvas.removeEventListener("mousemove", () => {});
+      window.removeEventListener("resize", updateCanvasSize);
+      canvas.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
 
   return (
     <canvas
       ref={canvasRef}
-      className="fixed inset-0 w-full h-full pointer-events-none"
+      style={{ width: "", height: "", position: "fixed", top: 0, left: 0, zIndex:-1 }}
     />
   );
 };
