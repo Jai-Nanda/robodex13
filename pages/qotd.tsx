@@ -11,8 +11,8 @@ export default function Qqtd() {
       </div>
       <div className='bg-white rounded-xl shadow-nav backdrop-filter backdrop-blur-sm bg-opacity-10  sm:max-w-5xl min-h-[65vh] m-auto max-w-[95%] mt-10 '>
           <div className='max-w-[90%] text-center m-auto pt-5 flex flex-col justify-center '>
-            <p className='text-lg text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates id qui necessitatibus at culpa sint placeat dicta dolorem, ipsum eius.</p>
-          <p className='text-pm-color text-lg pt-2 font-black'>Made by:</p>
+            <p className='text-lg text-center'>How are you supposed to make the connections of a 3 wheeled bot? (Robodex Interview'23) (Submit link of the image containing answer)</p>
+          <p className='text-pm-color text-lg pt-2 font-black'>Made by: Raghav Bansal</p>
           </div>
             <form className='' onSubmit={handleSubmit}>
               <div className='flex flex-col min-w-6xl mb-14  items-center'>
