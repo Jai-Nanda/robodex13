@@ -3,25 +3,27 @@
 @tailwind utilities;
 
 
+
 ::-webkit-scrollbar {
   width: 7px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background:#f7f4f4;
-  border-radius:  10px 0  0 10px;
+  background: #f7f4f4;
+  border-radius: 10px 0 0 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #cfcfcf;
-  border-radius:  20px 0  0 20px;
+  border-radius: 20px 0 0 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 
-body{
+body {
+   zoom: 80%; /* To make things look a bit smaller than in ur face lol*/
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -33,6 +35,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 /* :root{
   background-color: black;
 } */
@@ -45,20 +48,26 @@ body{
 } */
 
 
-.shadow-bg{
-  box-shadow: 0px 0px 125px 0px rgba(0, 0, 0, 0.25);
+.shadow-bg {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.8);
 }
-.shadow-nav{
-  box-shadow: 0px 0px 125px 0px rgba(0, 0, 0, 0.5);
+
+.shadow-nav {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.8);
 }
-.shadow-new{
-  box-shadow: 17px 0px 25px 7px rgba(0,0,0,0.25);
+
+.shadow-new {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.8);
 }
-.shadow-new3{
-  box-shadow: 17px 0px 25px 7px rgba(0,0,0,0.15);
+
+.shadow-new3 {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.8);
 }
-.shadow-new2{
-  box-shadow: -8px 0px 25px 7px rgba(0,0,0,0.25);}
+
+.shadow-new2 {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.8);
+}
+
 .container {
   margin: 20px 0;
   /* padding-top:10px; */
@@ -79,10 +88,10 @@ body{
   text-align: right;
 }
 
-.item span{
+.item span {
   background-color: blue;
-  display:inline-block;
+  display: inline-block;
   /* padding: 16px; */
   border: 2px solid red;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
