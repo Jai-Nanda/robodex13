@@ -26,8 +26,12 @@ const StarsAnimation = () => {
     updateCanvasSize(); // Initial canvas size update
 
     const stars: { x: number; y: number; radius: number; vx: number; vy: number }[] = [];
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    const canvasWidth = canvas.width;
+    const scaledFPS = canvasWidth / 20; 
     const FPS = 150;
-    const x = 75;
+    const x = Math.min(scaledFPS, 60);;
 
     for (let i = 0; i < x; i++) {
       stars.push({
@@ -130,7 +134,7 @@ const StarsAnimation = () => {
   return (
     <canvas
       ref={canvasRef}
-      style={{ width: "", height: "", position: "fixed", top: 0, left: 0, zIndex:-1 }}
+      style={{ width: "", height: "100%", position: "fixed", top: 0, left: 0, zIndex:-1 }}
     />
   );
 };
