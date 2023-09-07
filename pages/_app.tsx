@@ -16,7 +16,6 @@ const myFont = localFont({
   src: 'conthrax-sb.ttf',
   display: 'swap',
 })
-
 export default function App({ Component, pageProps }: AppProps) {
   return  <><style jsx global>{`
   html {
