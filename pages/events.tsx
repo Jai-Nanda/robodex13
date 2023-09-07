@@ -11,7 +11,7 @@ export default function events() {
           {/* <div className="flex justify-center items-center flex-col shadow-nav m-auto rounded-lg backdrop-filter backdrop-blur-sm bg-opacity-60 p-10"> */}
 
           <Image src={undraw} alt='bitch' className='w-96 mb-10 '></Image>
-          <h1 className=" text-center text-pm-color font-black  text-2xl ">Comming Soon...</h1>
+          <h1 className=" text-center text-pm-color font-black  text-2xl ">Coming Soon...</h1>
         </div>
       </div>
     </div>
