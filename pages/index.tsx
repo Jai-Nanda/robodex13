@@ -10,7 +10,7 @@ export default function Home() {
     <>
 
       <div style={{
-        backgroundImage: `url(/team.png)`,
+        backgroundImage: `url(/team1.jpg)`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         objectFit: "cover"
